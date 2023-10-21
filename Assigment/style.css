@@ -112,3 +112,132 @@ header{
       background-color: #4169e1;
     }
   }
+
+  #firstpage{
+    background-color: #4069e2;
+    color: #fefefe;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:  50px 100px;
+  }
+  .head{
+    width: 80%;
+    height: auto;
+    line-height: 1.5;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .head > div {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    margin-left: 30px;
+  }
+  .head div p {
+    font-size: 16px;
+    font-weight: 200;
+  }
+  
+  .head div button {
+    display: block;
+    font-size: 18px;
+    padding: 12px 50px;
+    border-radius: 50px;
+    margin: 0 5px;
+    color: #4169e1;
+    border: none;
+    cursor: pointer;
+  }
+
+  
+.smallScreen {
+    display: none;
+  }
+  
+  .head-Image {
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .head-Image > div {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .head-Image > div > img {
+    width: 70%;
+    height: 60%;
+    
+  }
+  
+  @media screen and (max-width: 600px) {
+    #firstpage {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .head {
+      width: 100%;
+      margin-bottom: 25px;
+    }
+  
+    .head > div {
+      width: 100%;
+      margin-left: 0;
+    }
+  
+    .head > div > h1 {
+      font-size: 20px;
+    }
+  
+    .head> div > p {
+      font-size: 16px;
+      word-spacing: 1.2;
+    }
+  
+    .head div button {
+      display: none;
+    }
+  
+    .smallScreen {
+      display: block;
+      width: 90%;
+      font-size: 18px;
+      padding: 12px 50px;
+      border-radius: 50px;
+      margin: 0 5px;
+      margin-top: 15px;
+      color: #4169e1;
+      border: none;
+      cursor: pointer;
+    }
+  
+    .head-Image {
+      width: 100%;
+    }
+  
+    .head-Image > div {
+      width: 100%;
+    }
+  
+    .head-Image > div > img {
+      width: 80%;
+      height: 50%;
+      margin-left: 0;
+    }
+  }

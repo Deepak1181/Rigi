@@ -288,5 +288,48 @@ header{
   font-family: "Times New Roman", Times, serif;
   font-size: 50px;
   font-weight: bold;
+  color: #3863e4;
+}
+.secondSec > h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 50px;
+  font-weight: bold;
   color: #4169e1;
+}
+
+.secondSec > h1:nth-child(1) {
+  font-weight: 500;
+}
+@media screen and (max-width: 600px) {
+  #feature .firstSec,
+  .secondSec {
+    flex-direction: row-reverse;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .firstSec > h1:nth-child(1) {
+    display: none;
+  }
+
+  .firstSec > div {
+    font-size: 20px;
+    gap: 3px;
+  }
+
+  .firstSec > h1:nth-child(3) {
+    font-size: 27px;
+  }
+
+  .secondSec > h1 {
+    font-size: 27px;
+  }
+
+  .secondSec > h1:nth-child(1) {
+    font-size: 22px;
+  }
+
+  .firstSec > div > p::first-letter {
+    font-size: 38px;
+  }
 }

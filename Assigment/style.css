@@ -241,3 +241,52 @@ header{
       margin-left: 0;
     }
   }
+  #feature{
+    width: 100%;
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 11px;
+    padding-top: 60px;
+  }
+  #feature > p{
+    font-size: 20px;
+    font-weight: 600;
+  }
+  #feature .firstSec,
+.secondSec {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 5px;
+}
+.firstSec > h1:nth-child(1) {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 50px;
+  font-weight: bold;
+  color: #4169e1;
+}
+
+.firstSec > div {
+  display: flex;
+  font-size: 40px;
+  color: #4067db;
+  gap: 10px;
+  letter-spacing: 0;
+  font-family: "Calibri";
+}
+
+.firstSec > div > p::first-letter {
+  font-size: 60px;
+}
+.firstSec > h1:nth-child(3) {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 50px;
+  font-weight: bold;
+  color: #4169e1;
+}

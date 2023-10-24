@@ -464,7 +464,7 @@ header{
 
 
 .tabs {
-  width: 65%;
+  width: 75%;
   height: auto;
   display: flex;
   justify-content: center;
@@ -492,16 +492,12 @@ header{
   border: 2px solid white;
   color: #e9eef3;
   }
-  /* .section{
-    display: none;
-  } */
-  .section.active {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin: auto;
+  .passiveBtn{
+    background-color: #3863e4;
+    border: 2px solid white;
+    color: #e9eef3;
   }
+ 
   
   .community {
     width: 90%;
@@ -514,7 +510,7 @@ header{
   }
   
   .commDesc {
-    width: 100%;
+    width: 90%;
     height: auto;
     line-height: 1.5;
     padding: 10px;
@@ -524,76 +520,237 @@ header{
   }
   
   .commDesc > div {
-    width: 80%;
-    display: flex;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.commDesc > div > h1 {
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.commDesc > div > p {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.commDesc > div > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  list-style: none;
+  text-align: left;
+}
+
+.commDesc > div > ul > li:before {
+  content: "✓";
+}
+
+.commDesc div button {
+  width: 70%;
+  display: block;
+  font-size: 18px;
+  padding: 12px 40px;
+  border-radius: 50px;
+  margin: 0 5px;
+  background-color: #4169e1;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.sharanImg {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+
+
+
+.sharanImg > div > img {
+  width: 75%;
+  height: auto;
+  border-radius: 25px;
+  background: linear-gradient(-225deg, #5d9fff 0%, #b8dcff 48%, #6bbbff 100%);
+}
+
+@media screen and (max-width: 600px) {
+   .sectionDesc{
+    width: 70%;
+    text-align: center;
+    margin: auto;
+   }
+    .tabs{
+      width: 50%;
+    }
+  .sectionBtn {
+    width: 50%;
+    border-radius: 20px;
+    padding: 6px 7px;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    border: 2px solid lightgray;
+  }
+
+  .activeBtn {
+    background-color: #4169e1;
+    color: white;
+    border: 2px solid white;
+  }
+  .passiveBtn{
+    background-color: #4169e1;
+    color: white;
+    border: 2px solid white;
+  }
+
+
+
+  .community {
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 20px;
+    width: 85%;
+    padding: 10px 0;
+    gap: 10px;
+    margin: auto;
   }
-  
+
+  .commDesc > div {
+    width: 100%;
+  }
+
   .commDesc > div > h1 {
-    font-size: 40px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
   }
-  
+
   .commDesc > div > p {
     font-size: 17px;
-    font-weight: 400;
     line-height: 1.5;
+    word-spacing: 1.2;
   }
-  
-  .commDesc > div > ul {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 1.5;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    list-style: none;
-    text-align: left;
-  }
-  
-  .commDesc > div > ul > li:before {
-    content: "✓";
-  }
-  
+
   .commDesc div button {
-    width: 70%;
-    display: block;
-    font-size: 18px;
-    padding: 12px 40px;
-    border-radius: 50px;
-    margin: 0 5px;
-    background-color: #4169e1;
-    border: none;
-    cursor: pointer;
-    color: white;
+    display: none;
   }
+   
   
-  .ownerImg {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-  }
-  
-  .ownerImg > div {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .ownerImg > div > img {
-    width: 80%;
-    height: 500px;
+  .sharanImg > div > img {
+    width: 90%;
     padding: 20px;
     border-radius: 25px;
-    background: linear-gradient(-225deg, #5d9fff 0%, #b8dcff 48%, #6bbbff 100%);
+    
   }
+  .sharanImg>div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+   
+  }
+
+}
+
+.section{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+}
+.courses{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
   
+}
+.card>button{
+  border-radius: 15px;
+  padding: 10px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  background-color: #4169e1;
+  color: white;
+  border: 2px solid white;
+  margin: auto;
+}
+.card{
+  margin: auto;
+  border: 2px solidrgb(238, 232, 232)d;
+  width: 300px;
+  padding: 5px;
+  text-align: start;
+  border: 2px solid rgb(172, 167, 167) ;
+  border-radius: 25px;
+}
+.card >h3,p{
+  padding: 10px;
+}
+.card>img{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  border-radius: 25px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .section{
+    display: block;
+    width: 82%;
+    text-align: center;
+    margin: auto;
+  } 
+  
+  .courses {
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  
+}
+
+.card > p {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+}
+
+.info{
+  display: flex;
+}
+.info{
+  display: flex;
+}
+.call>img{
+  border-radius: 50%;
+  border: 1px solid #ced0d9;
+  background-color: #ced0d9;
+  padding: 2px;
+}
+.fle{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fle>p{
+  font-size: 15px;
+}

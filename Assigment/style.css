@@ -668,6 +668,7 @@ header{
   align-items: center;
   text-align: center;
   margin: auto;
+  margin-top: 30px;
 }
 .courses{
   display: flex;
@@ -754,3 +755,78 @@ header{
 .fle>p{
   font-size: 15px;
 }
+
+.secHead , .testimonals{
+  width: 80%;
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+}
+.secDesc{
+  width: 80%;
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+}
+.testcardPart>img{
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  border: 1px solid #ced0d9;
+  
+}
+.testCard{
+  border: 1px solid rgb(139, 124, 124);
+  border-radius: 25px; 
+  width: 310px;
+}
+.testimonals{
+  gap: 10px;
+  display: flex;
+  margin-top: 30px;
+}
+.testimonalSec{
+  margin-top: 20px;
+}
+.secHead{
+  margin-top: 60px;
+}
+
+@media screen and (max-width: 600px) {
+  .testimonals{
+    
+    flex-direction: column;
+  }
+}
+
+
+#getApp {
+  width: 100%;
+  height: auto;
+  background-color: #e9eef3;
+  padding-top: 80px;
+  margin: auto;
+}
+
+#getApp > div {
+  width: 100%;
+  height: auto;
+  background-color: #4169e1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  margin: auto;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  color: white;
+}
+
+

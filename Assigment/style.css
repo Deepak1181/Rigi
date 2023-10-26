@@ -807,7 +807,7 @@ header{
 #getApp {
   width: 100%;
   height: auto;
-  background-color: #e9eef3;
+  background-color: white;
   padding-top: 80px;
   margin: auto;
 }
@@ -828,5 +828,86 @@ header{
   border-top-left-radius: 50%;
   color: white;
 }
+.mobileBtn{
+  display: none;
+}
+
+.deviceImg{
+display: flex;
+margin-top: 20px;
+
+}
+.deviceImgSecond>img{
+ width: 500px;
+ height: 300px;
+}
+.deviceImgSecond{
+  margin-top: 100px;
+}
+
+.deviceImgFirst>img{
+  width: 200px;
+ height: 400px;
+}
+
+.deskBtn{
+  width: 20%;
+  border-radius: 20px;
+  padding: 12px 15px;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  margin-top: 15px;
+  color: #3863e4;
+  background-color: white;
+  border: 2px solid lightgray;
+}
 
 
+@media screen and (max-width: 600px) {
+  #getApp {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    padding-top: 80px;
+    margin: auto;
+  }
+  .deviceImg{
+    display: flex;
+    margin-top: 20px;
+    
+    }
+    .deviceImgSecond>img{
+     width: 200px;
+     height: 100px;
+    }
+    .deviceImgSecond{
+      margin-top: 100px;
+    }
+    
+    .deviceImgFirst>img{
+      width: 100px;
+     height: 200px;
+    }
+    #getApp div{
+
+text-align: center;
+
+    }
+    .deskBtn{
+      display: none;
+    }
+    .mobileBtn{
+      display: block;
+      width: 70%;
+  border-radius: 20px;
+  padding: 12px 15px;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  margin-top: 15px;
+  color: #3863e4;
+  background-color: white;
+  border: 2px solid lightgray;
+    }
+}
